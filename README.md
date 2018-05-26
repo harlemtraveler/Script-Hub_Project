@@ -10,6 +10,7 @@
 <p>Blockchain will be used to enable secure data transactions for micro-contracts. It will also be utilized for smart contracts, to manage access for leased material/data.</p>
 
 <img src="./scripthub/wireframe/scripthub-search-display.png"></img>
+<img src="./scripthub/wireframe/scripthub-database-erd.png"></img>
 
 <h3>Database Schema:</h3>
 
@@ -35,4 +36,4 @@ ID | Script_id
 
 ID | Name | Data_url | Platform | Price
 --- | --- | --- | --- | ---
-1 | auto_sploit | http://google.com | 800 |    
+1 | auto_sploit | http://google.com | Python | 800   

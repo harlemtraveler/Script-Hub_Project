@@ -7,7 +7,7 @@ class App extends Component {
   constructor(props) {
     super();
     this.state = {
-      users: []
+      scripts: []
     };
   }
 
@@ -15,10 +15,10 @@ class App extends Component {
     //the url passed in the fetch below WON'T be hard coded
     //We need to make an environmental variable in .env file
     //that gets picked up in locally.
-    fetch(`${BASE_URL}/users`)
+    fetch(`${BASE_URL}/scripts`)
       .then(resp => resp.json())
       .then(data => this.setState({
-        users: data.users
+        scripts: data.scripts
       }));
   }
 
@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>React Home</h1>
-        <div>{JSON.stringify(this.state.users)}</div>
+        <div>{JSON.stringify(this.state.scripts)}</div>
         <div>{BASE_URL}</div>
       </div>
     );
